@@ -8,127 +8,118 @@
   <body>
     <!-- TODO: สร้าง header -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Welcome to My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- TODO: สร้าง main ที่มี -->
     <main>
-        <hr />
-        
-        <!-- 1. About section -->
-        <section id="about">
-            <u><h2>1.About me</h2></u>
-            <figure>
-                <img src="รูป.jpg" alt="My photo" width="17%" />
-            </figure>
-            <!-- - ข้อมูลประกอบ -->
-            <p>
-            Name: Pitchporn Tagutrua <br />
-            Age: 19 <br />
-            Birthday: 16 March 2006 <br /><br />
-            ดิฉันเป็นนักศึกษาที่สนใจด้านการพัฒนาเว็บและการเขียนโปรแกรม
-            โดยเฉพาะการสร้างเว็บไซต์ด้วย HTML5, CSS, และ JavaScript รวมถึงการพัฒนาโปรแกรมด้วยภาษา Java สนใจงานในสาย Web Developer และ Frontend Developer  
-            พร้อมพัฒนาตนเองและเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ
-            </p>
+      <hr />
 
+      <!-- 1. About section -->
+      <section id="about">
+        <u><h2>1.About me</h2></u>
+        <figure>
+          <img src="picture.jpg" alt="My photo" width="17%" />
+        </figure>
+        <!-- - ข้อมูลประกอบ -->
+        <p>
+          Name: Pitchporn Tagutrua <br />
+          Age: 19 <br />
+          Birthday: 16 March 2006 <br /><br />
+          ดิฉันเป็นนักศึกษาที่สนใจด้านการพัฒนาเว็บและการเขียนโปรแกรม
+          โดยเฉพาะการสร้างเว็บไซต์ด้วย HTML5, CSS, และ JavaScript
+          รวมถึงการพัฒนาโปรแกรมด้วยภาษา Java สนใจงานในสาย Web Developer และ
+          Frontend Developer พร้อมพัฒนาตนเองและเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ
+        </p>
 
-            <h3>My Skills</h3>
-            <table border="1" cellpadding="6">
-                <tr>
-                    <th>Skill</th>
-                    <th>Level</th>
-                    </tr>
-                    <tr>
-                    <td>HTML</td>
-                    <td>พื้นฐาน</td>
-                    </tr>
-                    <tr>
-                    <td>CSS</td>
-                    <td>กำลังเริ่มเรียนรู้</td>
-                    </tr>
-                    <tr>
-                    <td>Java</td>
-                    <td>ปานกลาง</td>
-                    </tr>
-                    <tr>
-                    <td>JavaScript</td>
-                    <td>ผู้เริ่มต้น</td>
-                </tr>
-            </table>
-        </section>
+        <h3>My Skills</h3>
+        <table border="1" cellpadding="6">
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>พื้นฐาน</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>กำลังเริ่มเรียนรู้</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>ปานกลาง</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>ผู้เริ่มต้น</td>
+          </tr>
+        </table>
+      </section>
       <!-- ===== 2. Portfolio section ===== -->
-        <section id="portfolio">
-            <u><h2>2.My Projects</h2></u>
+      <section id="portfolio">
+        <u><h2>2.My Projects</h2></u>
 
-
-            <figure>
-                <img src="ร้านค้าออนไลน์.png" alt="Project 1" width="250" />
-                <figcaption>Project เว็บร้านค้าออนไลน์</figcaption>
-            </figure>
-        </section>
-
+        <figure>
+          <img src="ร้านค้าออนไลน์.png" alt="Project 1" width="250" />
+          <figcaption>Project เว็บร้านค้าออนไลน์</figcaption>
+        </figure>
+      </section>
 
       <!-- ===== 3. Contact section ===== -->
-        <section id="contact">
-            <u><h2>3.Contact Me</h2></u>
-            <form>
-                <label>Name: </label><br />
-                <input type="text" name="name" required /><br />
+      <section id="contact">
+        <u><h2>3.Contact section</h2></u>
+        <form action="/register" method="POST">
+          <fieldset>
+            <legend>ข้อมูลส่วนตัว</legend>
+            <label for="fname">ชื่อจริง:</label>
+            <input type="text" id="fname" name="firstname" required />
+            <label for="lname">นามสกุล:</label>
+            <input type="text" id="lname" name="Lastname" required />
+            <br />
 
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="birthday">วันเกิด:</label>
+            <input type="date" id="birthday" name="birthday" required />
 
-                <label>Email: </label><br />
-                <input type="email" name="email" required /><br />
-
-
-                <label>Phone:</label><br />
-                <input type="tel" name="phone" /><br />
-               
-                <label>Subject:</label><br />
-                <input type="text" name="subject" placeholder="เรื่องที่ต้องการติดต่อ" /><br />
-
-
-                <label>Message:</label><br />
-                <textarea name="message" rows="5" required></textarea><br />
-
-
-                <label>Contact Type:</label><br />
-                <select name="type">
-                    <option value="work">งาน</option>
-                    <option value="question">สอบถามทั่วไป</option>
-                    <option value="other">อื่น ๆ</option>
-                </select><br /><br />
-
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
-        
-    <!-- ===== Sidesbar ===== -->
-        <aside>
-            <h3>Contact</h3>
-            <p>Email: 67160037.go.buu.ac.th</p>
-            <p>Phone: 012-345-6789</p>
-            <p>Location: Chonburi, Thailand</p>
-
-
-            <h3>Social</h3>
-            <ul>
-                <li><a href="#">Line</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-            </aside>
+            <fieldset>
+              <legend>เพศ</legend>
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">ชาย</label>
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">หญิง</label>
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">อื่นๆ</label>
+            </fieldset>
+            <label for="country">ประเทศ:</label>
+            <select id="country" name="country">
+              <option value="">เลือกประเทศ</option>
+              <option value="th">ไทย</option>
+              <option value="us">สหรัฐอเมริกา</option>
+            </select>
+            <br />
+            <legend>ข้อความเพิ่มเติม</legend>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea>
+            <br />
+            <input type="checkbox" id="agree" name="agree" required />
+            <label for="agree">ฉันยอมรับเงื่อนไขการใช้บริการ</label>
+          </fieldset>
+          <button type="submit">ส่งข้อมูล</button>
+          <button type="reset">ยกเลิก</button>
+        </form>
+      </section>
     </main>
 
     <!-- TODO: สร้าง footer -->
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+      <p>&copy; 2025 My Portfolio</p>
     </footer>
   </body>
 </html>
